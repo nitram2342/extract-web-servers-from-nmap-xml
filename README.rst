@@ -9,7 +9,7 @@ This python script scrapes information from Nmap XML files together in order to 
 
 ::
    
-   $ ./extract_web_server_from_nmap.py --xml 2018-05-23_fullrage_syn.xml
+   $ ./extract_web_server_from_nmap.py --xml 2018-05-23_fullrange_syn.xml
    https://aaa.bbb.ccc.ddd:8443
    http://aaa.bbb.ccc.ddd:8080
    http://aaa.bbb.ccc.ddd:10000
