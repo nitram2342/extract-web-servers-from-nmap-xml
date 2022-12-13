@@ -24,6 +24,12 @@ This python script scrapes information from Nmap XML files together in order to 
    192.168.23.5   
    [...]
    
+When you have a list of URLs, you may want to open them in a browser or lauch a screen shot tool, for example:
+
+::
+   
+   ./extract_hosts_from_nmap.py --xml nmap_*tcp.xml --port web | xargs -n 25 -P 1 firefox
+
 
 Copyright and Licence
 =====================
