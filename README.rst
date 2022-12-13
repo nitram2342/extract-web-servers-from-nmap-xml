@@ -1,4 +1,4 @@
-``extract_web_server_from_nmap.py`` is a python script for generating a list of web URLs from an Nmap XML file.
+``extract_hosts_from_nmap.py`` is a python script for generating a list of web URLs from an Nmap XML file.
 
 Purpose
 ==================
@@ -9,13 +9,21 @@ This python script scrapes information from Nmap XML files together in order to 
 
 ::
    
-   $ ./extract_web_server_from_nmap.py --xml 2018-05-23_fullrange_syn.xml
+   $ ./extract_hosts_from_nmap.py --xml 2018-05-23_fullrange_*.xml --port www
    https://aaa.bbb.ccc.ddd:8443
    http://aaa.bbb.ccc.ddd:8080
    http://aaa.bbb.ccc.ddd:10000
    http://aaa.bbb.ccc.ddd:12000
    [...]
 
+::
+   
+   $ ./extract_hosts_from_nmap.py --xml 2018-05-23_fullrange_*.xml --port 445
+   192.168.23.42
+   192.168.23.23
+   192.168.23.5   
+   [...]
+   
 
 Copyright and Licence
 =====================
